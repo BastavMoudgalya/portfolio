@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bastav Moudgalya - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>Bastav's Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <div class="profile-picture">
+                    <!-- Add your transparent profile picture here -->
+                    <img src="profile_picture.jpg" alt="Your Name">
+                </div>
+                <div class="profile-text">
+                    <h3>Hello, I'm Bastav Moudgalya</h3>
+                    <p>
+                        I'm a passionate B.Tech student pursuing Electronics and Instrumentation. My interests lie in web development, and I strive to excel in this creative field.
+                    </p>
+                    <p>
+                        My journey into web development started with a curiosity to create captivating user experiences. Combining technical skills with an eye for design, I aim to build intuitive and visually appealing websites.
+                    </p>
+                    <p>
+                        Through academic endeavors and personal projects, I've gained expertise in HTML, CSS, JavaScript, and various web frameworks. Exploring emerging technologies keeps me ahead in this ever-evolving digital landscape.
+                    </p>
+                    <p>
+                        When not coding, you can find me exploring nature or sketching my surroundings. Creativity fuels innovation, and I strive to bring that spirit into every project I work on.
+                    </p>
+                    <p>
+                        Currently seeking opportunities to collaborate on exciting web development projects. Let's create something amazing together!
+                    </p>
+                    <div class="contact-btn-container">
+                        <a href="#contact" class="contact-btn">Get in Touch</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        
+        
+        
+        
+        
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>Row Counter Website</h3>
+                <p>
+                    The Row Counter Website is a user-friendly web application that I developed to assist knitters and crocheters in keeping track of their stitches and rows while working on their projects.
+                </p>
+                <p>
+                    The website features a clean and intuitive interface, allowing users to easily input the number of rows or stitches they want to track. The counter automatically increments or decrements based on the user's input, making it effortless to keep track of progress.
+                </p>
+                <p>
+                    I built the Row Counter Website using HTML, CSS, and JavaScript. The project involved implementing event handling and dynamic DOM manipulation to create a seamless user experience. Additionally, the website is responsive, ensuring it works flawlessly on both desktop and mobile devices.
+                </p>
+                <p>
+                    This project not only enhanced my web development skills but also provided me with the opportunity to address a real-world problem faced by knitting and crocheting enthusiasts. It has been well-received by users in the crafting community and has motivated me to continue exploring web development as a means to solve practical challenges.
+                </p>
+                <!-- You can also add images or links to the live demo and source code if applicable -->
+                <div class="project-links">
+                    <a href="https://tubular-marshmallow-b15c1f.netlify.app" target="_blank" class="demo-btn">View Live Demo</a>
+                    <a href="README.md.html" target="_blank" class="code-btn">View Source Code</a>
+                </div>
+            </div>
+            <!-- Add more projects in a similar format -->
+        </section>
+        
+        
+        <section id="resume">
+            <h2>Resume</h2>
+            <p class="resume-intro">
+                Below is a summary of my education, skills, and work experiences. You can download the complete version of my resume in PDF format by clicking the button below.
+            </p>
+            <a href="your_resume.pdf" target="_blank" class="resume-download-btn">Download Resume</a>
+            <div class="resume-details">
+                <!-- Add your resume content here, such as education, skills, and work experiences -->
+            </div>
+        </section>
+        
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <div class="contact-form">
+                <form action="process_form.php" method="post">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+        
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+        
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+        
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+            <div class="contact-info">
+                <p>Feel free to reach out to me directly:</p>
+                <ul>
+                    <li>Email: <a href="mailto:chetribastav@gmail.com">chetribastav@gmail.com</a></li>
+                    <li>Phone: +91 7002754855</li>
+                    <!-- Add social media links with icons -->
+                    <li>
+                        Social Media:
+                        <a href="www.linkedin.com/in/
+                        bastav-moudgalya-b569a6228
+                        " target="_blank" title="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/bastavmoudgalya" target="_blank" title="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <!-- Add more social media links and icons as needed -->
+                    </li>
+                </ul>
+            </div>
+            
+        </section>
+        
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Bastav Moudgalya | NIT Silchar</p>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
